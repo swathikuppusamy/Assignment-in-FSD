@@ -56,39 +56,10 @@ The Repository pattern was chosen to decouple the business logic from data acces
 - **Centralized data access logic** – No duplication of data access code.
 
 ---
+##  Project Structure
 
-## Project Structure
-math-api/
-├── src/
-│   ├── controllers/
-│   │   └── mathController.js
-│   ├── middlewares/
-│   │   ├── errorHandler.js
-│   │   └── requestLogger.js
-│   ├── models/
-│   │   └── index.js
-│   ├── repositories/
-│   │   └── calculationRepository.js
-│   ├── routes/
-│   │   └── mathRoutes.js
-│   ├── services/
-│   │   └── mathService.js
-│   ├── utils/
-│   │   └── validationUtils.js
-│   ├── app.js
-│   └── server.js
-├── prisma/
-│   ├── schema.prisma
-│   └── migrations/
-├── tests/
-│   ├── unit/
-│   │   └── mathService.test.js
-│   └── integration/
-│       └── mathRoutes.test.js
-├── .env
-├── package.json
-└── README.md
 
+math-api/ ├── src/ │ ├── controllers/ │ │ └── mathController.js │ ├── middlewares/ │ │ ├── errorHandler.js │ │ └── requestLogger.js │ ├── models/ │ │ └── index.js │ ├── repositories/ │ │ └── calculationRepository.js │ ├── routes/ │ │ └── mathRoutes.js │ ├── services/ │ │ └── mathService.js │ ├── utils/ │ │ └── validationUtils.js │ ├── app.js │ └── server.js ├── prisma/ │ ├── schema.prisma │ └── migrations/ ├── tests/ │ ├── unit/ │ │ └── mathService.test.js │ └── integration/ │ └── mathRoutes.test.js ├── .env ├── package.json └── README.md
 
 
 
